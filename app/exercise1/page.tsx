@@ -25,8 +25,8 @@ export default function Exercise1Page() {
             methodology. Try clicking the links to see the active state change.
           </p>
           <div className="border border-zinc-200 rounded-xl overflow-hidden dark:border-zinc-800">
-            Added Suspense to avoid build errors because navbar using of searchParams hook which is
-            not available in server components.
+            {/* Added Suspense to avoid build errors because navbar using of searchParams hook which is
+            not available in server components. */}
             <Suspense fallback={<div className="h-16" />}>
               <Navbar />
             </Suspense>
