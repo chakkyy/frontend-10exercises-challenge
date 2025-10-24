@@ -89,7 +89,7 @@ export default function Home() {
       <div className="container mx-auto py-12 sm:py-20 px-4 sm:px-8">
         <div className="mb-16 sm:mb-20 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tighter mb-6 text-zinc-900 dark:text-zinc-100">
-            Fever Frontend Challenge
+            Frontend Challenge
           </h1>
           <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto leading-relaxed">
             A comprehensive showcase of 10 frontend engineering exercises demonstrating expertise in
@@ -108,7 +108,7 @@ export default function Home() {
             About This Project
           </h2>
           <p className="text-zinc-600 dark:text-zinc-400 mb-4 leading-relaxed">
-            This is a take-home challenge for a Frontend Engineer position at Fever. Each exercise
+            This is a take-home challenge for a Frontend Engineer position. Each exercise
             demonstrates different aspects of modern frontend development, from styling and
             accessibility to performance optimization and user experience design.
           </p>

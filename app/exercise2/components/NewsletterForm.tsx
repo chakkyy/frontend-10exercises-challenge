@@ -134,7 +134,7 @@ export const NewsletterForm = () => {
       >
         <fieldset className="space-y-4 border-0 p-0 m-0">
           <legend id="newsletter-heading" className="text-2xl font-bold mb-2 text-foreground">
-            Subscribe to Fever Newsletter
+            Subscribe to Newsletter
           </legend>
 
           <p id="newsletter-description" className="text-sm text-muted-foreground mb-4">

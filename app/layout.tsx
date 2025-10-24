@@ -6,8 +6,8 @@ import Link from 'next/link'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Fever Frontend Challenge - Carlos Ramirez',
-  description: 'Senior Frontend Engineer Challenge showcasing 10 comprehensive exercises',
+  title: 'Frontend Challenge - Carlos Ramirez',
+  description: 'Frontend Engineer Challenge showcasing 10 comprehensive exercises',
 }
 
 export default function RootLayout({
@@ -46,7 +46,7 @@ export default function RootLayout({
                 >
                   Carlos Ramirez
                 </Link>{' '}
-                for Fever Frontend Engineer Challenge
+                for Frontend Engineer Challenge
               </p>
             </div>
           </footer>

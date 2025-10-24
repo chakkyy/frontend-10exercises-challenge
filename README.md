@@ -1,4 +1,4 @@
-# Fever Frontend Challenge - Carlos Ramirez
+# Frontend Challenge - Carlos Ramirez
 
 A showcase of 10 frontend engineering exercises demonstrating skills in React, TypeScript, Testing, Performance Optimization, and User Experience Design.
 
@@ -292,4 +292,4 @@ This project is ready deployed on Vercel:
 
 ## 📄 License
 
-This project is part of a take-home challenge for Fever's Frontend Engineer position.
+This project is part of a take-home challenge for a Frontend Engineer position.
