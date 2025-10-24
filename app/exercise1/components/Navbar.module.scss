@@ -1,0 +1,117 @@
+@use '../styles/variables' as *;
+
+.navbar {
+  background-color: $background;
+  border-bottom: 1px solid $border-color;
+  padding: $spacing-sm 0;
+  font-family: $font-family;
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-xs;
+
+    @media (min-width: $breakpoint-mobile) {
+      flex-direction: row;
+      gap: $spacing-md;
+    }
+  }
+
+  &__item {
+    margin: 0;
+  }
+
+  &__link {
+    display: block;
+    padding: $spacing-sm $spacing-md;
+    color: $text-muted;
+    text-decoration: none;
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+    border-radius: $border-radius-md;
+    transition: all $transition-base;
+    position: relative;
+
+    &:hover {
+      color: $primary-color;
+      background-color: rgba($primary-color, 0.1);
+    }
+
+    &:focus-visible {
+      outline: 2px solid $primary-color;
+      outline-offset: 2px;
+    }
+
+    &--active {
+      color: $primary-color;
+      font-weight: $font-weight-bold;
+      background-color: rgba($primary-color, 0.1);
+
+    }
+  }
+}
+
+/* 
+ * Modern CSS Custom Properties Approach (Alternative)
+ * This demonstrates the evolution from SCSS to modern vanilla CSS
+ * as discussed in: https://cramirez.is-a.dev/articles/modern-styling-in-react/
+ */
+.navbarModern {
+  --navbar-bg: hsl(0, 0%, 100%);
+  --navbar-border: hsl(214.3, 31.8%, 91.4%);
+  --navbar-text: hsl(215.4, 16.3%, 46.9%);
+  --navbar-primary: hsl(221.2, 83.2%, 53.3%);
+  --navbar-padding: 1rem;
+  --navbar-gap: 0.5rem;
+
+  background-color: var(--navbar-bg);
+  border-bottom: 1px solid var(--navbar-border);
+  padding: var(--navbar-padding) 0;
+
+  &[data-layout='horizontal'] {
+    .navbarModern__list {
+      flex-direction: row;
+    }
+  }
+
+  &[data-layout='vertical'] {
+    .navbarModern__list {
+      flex-direction: column;
+    }
+  }
+
+  .navbarModern__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: var(--navbar-gap);
+  }
+
+  .navbarModern__link {
+    display: block;
+    padding: var(--navbar-padding);
+    color: var(--navbar-text);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+    &[data-active='true'] {
+      color: var(--navbar-primary);
+      font-weight: 700;
+    }
+
+    &:hover {
+      color: var(--navbar-primary);
+    }
+  }
+}
+
